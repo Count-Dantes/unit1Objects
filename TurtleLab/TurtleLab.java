@@ -1,4 +1,5 @@
 import java.awt.Color;
+import java.util.Random;
 
 public class TurtleLab
 {
@@ -9,6 +10,7 @@ public class TurtleLab
         Color orange = new Color(232,118,0);
         Color blue = new Color(0,0, 255);
         //Arpan creates the number 3
+        Arpan.setBodyColor(orange);
         Arpan.setPenColor(orange);
         Arpan.setPenWidth(10);
         Arpan.penDown();
@@ -26,6 +28,7 @@ public class TurtleLab
         //Andrew creates the number 0
         Turtle Andrew = new Turtle(300,50,turtleWorld);
         Andrew.setPenColor(blue);
+        Andrew.setBodyColor(blue);
         Andrew.setPenWidth(10);
         Andrew.turn(90);
         Andrew.forward(150);
@@ -38,6 +41,7 @@ public class TurtleLab
         //Dhipak makes 6 because his bumpers broke
         Turtle Dishwash = new Turtle(550,50, turtleWorld);
         Dishwash.setPenColor(orange);
+        Dishwash.setBodyColor(orange);
         Dishwash.setPenWidth(10);
         Dishwash.turn(180);
         Dishwash.forward(190);
@@ -50,11 +54,15 @@ public class TurtleLab
         //I get the easy job because I am cool
         Turtle Arresh = new Turtle (805,50, turtleWorld);
         Arresh.setPenColor(blue);
+        Arresh.setBodyColor(blue);
         Arresh.setPenWidth(10);
         Arresh.turn(180);
         Arresh.forward(190);
         //Arresh.win_everything
-        
+        //creates a random color
+        Random Generator = new Random();
+        Color random = new Color(Generator.nextInt(256)
+        ,Generator.nextInt(256),Generator.nextInt(256));
         //Now the triangle begins
         //Because the triangele is essentiall 3 scribles imposed on
         //itself, I start the 3 points at different headings, but can move them all the same 
@@ -65,9 +73,12 @@ public class TurtleLab
         topPoint.setPenWidth(10);
         leftPoint.setPenWidth(10);
         rightPoint.setPenWidth(10);
-        topPoint.setPenColor(blue);
-        leftPoint.setPenColor(blue);
-        rightPoint.setPenColor(blue);
+        topPoint.setPenColor(random);
+        leftPoint.setPenColor(random);
+        rightPoint.setPenColor(random);
+        topPoint.setBodyColor(random);
+        leftPoint.setBodyColor(random);
+        rightPoint.setBodyColor(random);
         topPoint.turn(210);
         rightPoint.turn(-30);
         leftPoint.turn(90);
@@ -92,6 +103,7 @@ public class TurtleLab
         topPoint.forward(20);
         leftPoint.forward(20);
         rightPoint.forward(20);
+        
     }
 }
 

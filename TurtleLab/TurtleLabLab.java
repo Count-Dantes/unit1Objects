@@ -7,8 +7,6 @@ public class TurtleLabLab
     {
         World turtleWorld = new World(1000,750);
         Turtle Arpan = new Turtle(50,50,turtleWorld);
-        Arpan.setVisible(False);
-        System.out.println(Arpan.isVisible());
         Color orange = new Color(232,118,0);
         Color blue = new Color(0,0, 255);
         //Arpan creates the number 3
