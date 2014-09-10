@@ -1,3 +1,8 @@
+//Arresh Amleshi
+//Turtle lab
+//makes pretty shapes and numbers
+//revison hisory: ¯\_(ツ)_/¯
+
 import java.awt.Color;
 import java.util.Random;
 
@@ -5,60 +10,63 @@ public class TurtleLab
 {
     public static void main(String args[])
     {
+        
         World turtleWorld = new World(1000,750);
-        Turtle Arpan = new Turtle(50,50,turtleWorld);
+        Turtle arpan = new Turtle(50,50,turtleWorld);
         Color orange = new Color(232,118,0);
         Color blue = new Color(0,0, 255);
-        //Arpan creates the number 3
-        Arpan.setBodyColor(orange);
-        Arpan.setPenColor(orange);
-        Arpan.setPenWidth(10);
-        Arpan.penDown();
-        Arpan.turn(90);
-        Arpan.forward(150);
-        Arpan.turn(90);
-        Arpan.forward(95);
-        Arpan.turn(90);
-        Arpan.forward(150);
-        Arpan.backward(150);
-        Arpan.turn(-90);
-        Arpan.forward(95);
-        Arpan.turn(90);
-        Arpan.forward(150);
-        //Andrew creates the number 0
-        Turtle Andrew = new Turtle(300,50,turtleWorld);
-        Andrew.setPenColor(blue);
-        Andrew.setBodyColor(blue);
-        Andrew.setPenWidth(10);
-        Andrew.turn(90);
-        Andrew.forward(150);
-        Andrew.turn(90);
-        Andrew.forward(190);
-        Andrew.turn(90);
-        Andrew.forward(150);
-        Andrew.turn(90);
-        Andrew.forward(190);
+        //arpan creates the number 3
+        //note that the turtles are named after people, they were origeonally
+        //supposed to be replaced with images of said people
+        arpan.setBodyColor(orange);
+        arpan.setPenColor(orange);
+        arpan.setPenWidth(10);
+        arpan.penDown();
+        arpan.turn(90);
+        arpan.forward(150);
+        arpan.turn(90);
+        arpan.forward(95);
+        arpan.turn(90);
+        arpan.forward(150);
+        arpan.backward(150);
+        arpan.turn(-90);
+        arpan.forward(95);
+        arpan.turn(90);
+        arpan.forward(150);
+        //andrew creates the number 0
+        Turtle andrew = new Turtle(300,50,turtleWorld);
+        andrew.setPenColor(blue);
+        andrew.setBodyColor(blue);
+        andrew.setPenWidth(10);
+        andrew.turn(90);
+        andrew.forward(150);
+        andrew.turn(90);
+        andrew.forward(190);
+        andrew.turn(90);
+        andrew.forward(150);
+        andrew.turn(90);
+        andrew.forward(190);
         //Dhipak makes 6 because his bumpers broke
-        Turtle Dishwash = new Turtle(550,50, turtleWorld);
-        Dishwash.setPenColor(orange);
-        Dishwash.setBodyColor(orange);
-        Dishwash.setPenWidth(10);
-        Dishwash.turn(180);
-        Dishwash.forward(190);
-        Dishwash.turn(-90);
-        Dishwash.forward(100);
-        Dishwash.turn(-90);
-        Dishwash.forward(100);
-        Dishwash.turn(-90);
-        Dishwash.forward(100);
+        Turtle dishwash = new Turtle(550,50, turtleWorld);
+        dishwash.setPenColor(orange);
+        dishwash.setBodyColor(orange);
+        dishwash.setPenWidth(10);
+        dishwash.turn(180);
+        dishwash.forward(190);
+        dishwash.turn(-90);
+        dishwash.forward(100);
+        dishwash.turn(-90);
+        dishwash.forward(100);
+        dishwash.turn(-90);
+        dishwash.forward(100);
         //I get the easy job because I am cool
-        Turtle Arresh = new Turtle (805,50, turtleWorld);
-        Arresh.setPenColor(blue);
-        Arresh.setBodyColor(blue);
-        Arresh.setPenWidth(10);
-        Arresh.turn(180);
-        Arresh.forward(190);
-        //Arresh.win_everything
+        Turtle arresh = new Turtle (805,50, turtleWorld);
+        arresh.setPenColor(blue);
+        arresh.setBodyColor(blue);
+        arresh.setPenWidth(10);
+        arresh.turn(180);
+        arresh.forward(190);
+        //arresh.win_everything
         //creates a random color
         Random Generator = new Random();
         Color random = new Color(Generator.nextInt(256)
